@@ -1,28 +1,22 @@
-<!DOCTYPE html><!--mowimy nam ze plik ten jest typu html-->
-<html><!--glowny znacznik, kontener naszej strony-->
-	<head><!--dane na temat naszego dokumentu, mozemy dac opis do naszego dokumentu
-moze zawierac tytul naszej strony, nadac rozne atrybuty naszej stronie, mozemy
-takze udostepnic rozne zrodla,linki do naszego dokumentu-->
+<!DOCTYPE html> <!-- dokument HTML5-->
+<html lang="en-US"><!--jezyk strony-->
+	<head>
 		<meta charset = "UTF-8"><!--meta tag - informacje o naszym pliku-->
 		<!--UTF-8 bardzo popoularny, zwykly zestaw znakow-->
 		<meta name="description" content = "This is an awesome website">
 		<!--charset,name,content - atrybuty, wlasciwosci-->
-		<title>Peter's Website</title><!--tytul-widoczny jest na zakladce, zawiera tekst-->
-
-
-
-
+		<title>Soldier211's Website</title><!--tytul-widoczny jest na zakladce, zawiera tekst-->
 	</head>
-	<body style = "background-color:lightblue;"><!--zawartosc naszej strony, ten znacznik jest tak zwanym dzieckiem tagu html-->
-	
-	<a href="https://www.google.com" target="_blank"><h1>Google's <b>Homepage</b></h1></a>
-	<!--href dalemy link i jak nacisniemy na Google's Homepage przeniesie nas na google.com
-	ale dzieki wlasciwosci target zostaje otwarta nowa karta-->
-	<a href="page2.html">Page2</a>
-	<br/>
-	<a href="dir/page3.html">Page3</a>
-	<br/>
-	<a href="OIP.jpg">Tokyo Ghoul</a>
+	<body style = "background-color:tomato;"><!--zawartosc naszej strony, ten znacznik jest tak zwanym dzieckiem tagu html-->
+		<h1 style="font-size:300%; text-align:center;">Lubie placki</h1>
+		<a href="https://www.google.com" target="_blank"><h1>Google's <b>Homepage</b></h1></a>
+		<!--href dalemy link i jak nacisniemy na Google's Homepage przeniesie nas na google.com
+		ale dzieki wlasciwosci target zostaje otwarta nowa karta-->
+		<a href="page2.html">Page2</a>
+		<br>
+		<a href="dir/page3.html">Page3</a>
+		<br>
+		<img src="OIP.jpg" alt="Tokyo Ghoul" width="416" height="284">
 		<header>
 			<nav><!--zawiera linki-->
 		
@@ -31,6 +25,7 @@ takze udostepnic rozne zrodla,linki do naszego dokumentu-->
 		
 		
 		</header>
+		<hr>
 		<main>
 			<article><!--tu bedzie artykul-->
 				<section>
@@ -53,25 +48,39 @@ takze udostepnic rozne zrodla,linki do naszego dokumentu-->
 		
 		
 		</footer>
+		<blockquote cite="http://www.worldwildlife.org/who/index.html">
+			For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+		</blockquote>
 	
-		<h2>Peter's Website</h2> <!--naglowek od h1 do h6-->
+		<h2 style="font-family:verdana;"">Soldier211's Website</h2> <!--naglowek od h1 do h6-->
 		<hr/><!--horizontal rule tab - linia przedzialu-->
 		<br/><!--break-nowa pusta linia-->
 		<p><big>This</big><small> is</small> my <i><b>paragraph</b></i></p> <!--dzieki b tekst 
 		zostanie pogrubiony-->
 		<!--dzieki big tekst zrobi sie wiekszy-->
 		<!--jesli uzyjemy i to tekst bedzie pochylony-->
-		<p>H<sub>2</sub>0</p>
+		<p>H<sub>10</sub>0</p>
+		<br> <!--pusta linijka miedzy paragrafami-->
 		<p>10<sup>2</sup></p>
+		<p style="color:red;">This is a red paragraph</p>
+		<p title='John "Shotgun" Johnson'>This is a paragraph with a title</p> <!--pojawi sie dymek-->
 		
 		<h2 style = "color:green;">Style and Colors</h2>
 		<p style="color:red;background-color:blue;">You can style your HTML and make it loop pretty</p>
-		
-		
-		
-		
-		
+		<pre><!--preformatted text-->
+			My Bonnie lies over the ocean.
+		  
+			My Bonnie lies over the sea.
+		  
+			My Bonnie lies over the ocean.
+		  
+			Oh, bring back my Bonnie to me.
+		</pre>
+		<em>This text is emphasized</em>
+		<br>
+		<small>This is some smaller text.</small>
+		<p>Do not forget to buy <mark>milk</mark> today.</p>
+		<p>My favorite color is <del>blue</del> red.</p> <!--deleted text-->
+		<p>My favorite color is <del>blue</del> <ins>red</ins>.</p> <!--underlined text-->
 	</body>
-	
-
 </html><!--znacznik zamykajacy-->

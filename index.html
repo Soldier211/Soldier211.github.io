@@ -6,9 +6,10 @@
 		<meta name="description" content = "This is an awesome website">
 		<!--charset,name,content - atrybuty, wlasciwosci-->
 		<title>Soldier211's Website</title><!--tytul-widoczny jest na zakladce, zawiera tekst-->
+		<link rel="stylesheet" href="style.css"><!--link do pliku css-->
 	</head>
 	<body style = "background-color:tomato;"><!--zawartosc naszej strony, ten znacznik jest tak zwanym dzieckiem tagu html-->
-		<h1 style="font-size:300%; text-align:center;">Lubie placki</h1>
+		<h1 style="font-size:300%; text-align:center; border:2px solid dodgerblue;">Lubie placki</h1>
 		<a href="https://www.google.com" target="_blank"><h1>Google's <b>Homepage</b></h1></a>
 		<!--href dalemy link i jak nacisniemy na Google's Homepage przeniesie nas na google.com
 		ale dzieki wlasciwosci target zostaje otwarta nowa karta-->
@@ -51,7 +52,9 @@
 		<blockquote cite="http://www.worldwildlife.org/who/index.html">
 			For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
 		</blockquote>
-	
+		<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+		<!--dziala na zasadzie cudzyslowia-->
+		<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p> <!--pokazuje dymek-->
 		<h2 style="font-family:verdana;"">Soldier211's Website</h2> <!--naglowek od h1 do h6-->
 		<hr/><!--horizontal rule tab - linia przedzialu-->
 		<br/><!--break-nowa pusta linia-->
@@ -63,11 +66,11 @@
 		<br> <!--pusta linijka miedzy paragrafami-->
 		<p>10<sup>2</sup></p>
 		<p style="color:red;">This is a red paragraph</p>
-		<p title='John "Shotgun" Johnson'>This is a paragraph with a title</p> <!--pojawi sie dymek-->
+		<p title='John "Shotgun" Johnson' style="text-align:center">This is a paragraph with a title</p> <!--pojawi sie dymek-->
 		
 		<h2 style = "color:green;">Style and Colors</h2>
 		<p style="color:red;background-color:blue;">You can style your HTML and make it loop pretty</p>
-		<pre><!--preformatted text-->
+		<pre><!--preformatted text zachowuje spacje i entery-->
 			My Bonnie lies over the ocean.
 		  
 			My Bonnie lies over the sea.
@@ -79,8 +82,20 @@
 		<em>This text is emphasized</em>
 		<br>
 		<small>This is some smaller text.</small>
+		<br>
+		<strong>This is strong text</strong>
 		<p>Do not forget to buy <mark>milk</mark> today.</p>
 		<p>My favorite color is <del>blue</del> red.</p> <!--deleted text-->
 		<p>My favorite color is <del>blue</del> <ins>red</ins>.</p> <!--underlined text-->
+
+		<address>
+			Written by John Doe.<br>
+			Visit us at:<br>
+			Example.com<br>
+			Box 564, Disneyland<br>
+			USA
+		</address>
+		<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p><!--tytul ksiazki, filmu-->
+		<bdo dir="rtl">This text will be written from right to left</bdo>
 	</body>
 </html><!--znacznik zamykajacy-->

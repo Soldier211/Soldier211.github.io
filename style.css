@@ -1,0 +1,6 @@
+p {
+    border: 2px solid powderblue;
+    margin: 30px; // zewnętrzne marginesy
+    padding: 20px; // wewnętrzne marginesy
+    color: blue;
+}

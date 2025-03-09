@@ -8,7 +8,9 @@
 		<title>Soldier211's Website</title><!--tytul-widoczny jest na zakladce, zawiera tekst-->
 		<link rel="stylesheet" href="style.css"><!--link do pliku css-->
 	</head>
-	<body style = "background-color:tomato;"><!--zawartosc naszej strony, ten znacznik jest tak zwanym dzieckiem tagu html-->
+	<body style = "background-color:rgb(10,10,10,0.7); color: white"><!--zawartosc naszej strony, ten znacznik jest tak zwanym dzieckiem tagu html-->
+		<a href="#C4">Jump to Chapter 4</a>
+		<a href="page2.html#C4">Jump to page 2 html</a>
 		<h1 style="font-size:300%; text-align:center; border:2px solid dodgerblue;">Lubie placki</h1>
 		<a href="https://www.google.com" target="_blank"><h1>Google's <b>Homepage</b></h1></a>
 		<!--href dalemy link i jak nacisniemy na Google's Homepage przeniesie nas na google.com
@@ -17,7 +19,12 @@
 		<br>
 		<a href="dir/page3.html">Page3</a>
 		<br>
-		<img src="OIP.jpg" alt="Tokyo Ghoul" width="416" height="284">
+		<center><img src="images/omori.avif" alt="Omori" width="50%" height="auto" usemap="#friends"></center>
+		<map name="friends">
+			<area shape="circle" coords="239.5,151,200" title="Omori's friends" alt="Sunny" href="/" onclick="myFunction()">
+			<!--default (defise entire region)-->
+			<!-- dla poly podaje sie dokladne kordynaty-->
+		</map>
 		<header>
 			<nav><!--zawiera linki-->
 		
@@ -87,7 +94,13 @@
 		<p>Do not forget to buy <mark>milk</mark> today.</p>
 		<p>My favorite color is <del>blue</del> red.</p> <!--deleted text-->
 		<p>My favorite color is <del>blue</del> <ins>red</ins>.</p> <!--underlined text-->
-
+		<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools.com!</a>
+		<!--<a href="mailto:s217357@sggw.edu.pl">Send email</a>-->
+		<!--_self, _blank, _parent, _top-->
+		<!-- _top -  Jeśli ten link zostanie kliknięty wewnątrz iframe,
+		spowoduje załadowanie strony w pełnym oknie, zamiast tylko w ramce-->
+		<!--parent przeciwnie dziala-->
+		<h2 id="C4">Chapter 4 Location</h2>
 		<address>
 			Written by John Doe.<br>
 			Visit us at:<br>
@@ -97,5 +110,6 @@
 		</address>
 		<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p><!--tytul ksiazki, filmu-->
 		<bdo dir="rtl">This text will be written from right to left</bdo>
+		<script src="script.js"></script>
 	</body>
 </html><!--znacznik zamykajacy-->

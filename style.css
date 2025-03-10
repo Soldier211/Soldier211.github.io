@@ -4,3 +4,21 @@ p {
     padding: 20px; // wewnętrzne marginesy
     color: blue;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse; // brak podwojnej granicy
+}
+
+th,td {
+    background-color: lightblue;
+    padding: 15px;
+}
+
+th:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+tr:hover {
+    color: lightgreen;
+}

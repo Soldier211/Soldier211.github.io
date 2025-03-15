@@ -4,6 +4,11 @@
 		<meta charset = "UTF-8"><!--meta tag - informacje o naszym pliku-->
 		<!--UTF-8 bardzo popoularny, zwykly zestaw znakow-->
 		<meta name="description" content = "This is an awesome website">
+		<meta name="author" content="Soldier211">
+		<meta name="keywords" content="HTML, CSS, JavaScript"><!--slowa kluczowe-->
+		<meta http-equiv="refresh" content="30"><!--odswieza strone co 30 sekund-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--viewport - szerokosc urzadzenia, skala-->
+		<base href="/" target="_blank"><!--bazowy adres url-->
 		<!--charset,name,content - atrybuty, wlasciwosci-->
 		<title>Soldier211's Website</title><!--tytul-widoczny jest na zakladce, zawiera tekst-->
 		<link rel="stylesheet" href="style.css"><!--link do pliku css-->
@@ -17,6 +22,7 @@
 		<!--href dalemy link i jak nacisniemy na Google's Homepage przeniesie nas na google.com
 		ale dzieki wlasciwosci target zostaje otwarta nowa karta-->
 		<a href="page2.html">Page2</a>
+		<iframe src="page2.html" title="page3html" width="100%" height="300"></iframe>
 		<br>
 		<a href="dir/page3.html">Page3</a>
 		<br>
@@ -39,6 +45,10 @@
 			<article><!--tu bedzie artykul-->
 				<section>
 					<aside>
+						<div class="city">
+							<h2>London</h2>
+							<p>London is the capital of England</p>
+						</div>
 					</aside>
 				<table>
 					<tr>
@@ -70,8 +80,6 @@
 				Lorem ipsum<div>I am a div</div> dolor sit amet.
 				</section>
 				<section>
-				
-				
 				</section>
 			
 			</article>
@@ -142,6 +150,31 @@
 		</address>
 		<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p><!--tytul ksiazki, filmu-->
 		<bdo dir="rtl">This text will be written from right to left</bdo>
+		<div class="city">
+			<h2>London</h2>
+			<p>London is the capital of England</p>
+		</div>
+		<code>
+			x=5;
+			y=6;
+			z=x+y;
+		</code>
+		<p> Save the document by pressing <kbd>Ctrl+S</kbd></p>
+		<p>Message from my computer:</p>
+		<p><samp>File not found.<br>Press F1 to continue</samp></p>
+		<pre>
+			<code>
+x=5;
+y=6;
+z=x+y;
+			</code>
+		</pre>
+		<p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+		<p>I will display &copy;</p>
+
+
+
 		<script src="script.js"></script>
+		<noscript>Sorry, your browser does not support JavaScript!</noscript>
 	</body>
 </html><!--znacznik zamykajacy-->

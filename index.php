@@ -15,8 +15,9 @@
 		<link rel="icon" href="images/dark.png">
 	</head>
 	<body style = "background-color:rgb(10,10,10,0.7); color: white"><!--zawartosc naszej strony, ten znacznik jest tak zwanym dzieckiem tagu html-->
-		<a href="#C4">Jump to Chapter 4</a>
-		<a href="page2.html#C4">Jump to page 2 html</a>
+		<a href="#C4" target="_self">Jump to Chapter 4</a><br>
+		<a href="#myCanvas" target="_self">Jump to myCanvas</a><br>
+		<a href="page2.html#C4" target="_self">Jump to page 2 html</a>
 		<h1 style="font-size:300%; text-align:center; border:2px solid dodgerblue;">Lubie placki</h1>
 		<a href="https://www.google.com" target="_blank"><h1>Google's <b>Homepage</b></h1></a>
 		<!--href dalemy link i jak nacisniemy na Google's Homepage przeniesie nas na google.com
@@ -80,17 +81,53 @@
 				Lorem ipsum<div>I am a div</div> dolor sit amet.
 				</section>
 				<section>
-					<form action="/action_page.php" method="post">
-						<label for="fname">First name:</label><br>
-						<input type="text" name="fname" value="John"><br><!--name - okresla nazwe pod jaka dane z tego zostana
-						przeslane do serwera w formularzu-->
-						<label for="lname">Last name:</label><br>
-						<input type="text" name="lname" value="Doe"><br><br>
-						<input type="submit" value="Submit"><!-- your input was received as 
-						fname=John&lname=Doe , pozniej do sie odbiera za pomoca PHP-->
+					<form action="/action_page.php" method="post" oninput="x.value=parseInt(a.value)+parseInt(b.value)" target="_self">
+						<fieldset>
+							<label for="fname">First name:</label><br>
+							<input type="text" name="fname" value="John" size="50" autofocus><br><!--name - okresla nazwe pod jaka dane z tego zostana
+							przeslane do serwera w formularzu-->
+							<label for="lname">Last name:</label><br>
+							<input type="text" name="lname" value="Doe" size="20"><br><br><!--size=20 domyslna wartosc -->
+							<input type="submit" value="Submit"><!-- your input was received as 
+							fname=John&lname=Doe , pozniej do sie odbiera za pomoca PHP-->
+							<input type="submit" value="Submit using get" formmethod="get">
+						</fieldset>
+						<fieldset>
+							<input list="browsers" placeholder="Choose your favourite browser" size="30"><!--list musi miec taka sama nazwe jak id-->
+							<datalist id="browsers">
+								<option value="Edge">
+								<option value="Firefox">
+								<option value="Chrome">
+								<option value="Opera">
+								<option value="Safari">
+							</datalist>
+						</fieldset>
+						<fieldset>
+						<label for="cars">Choose a car:</label>
+						<select id="cars" name="cars" size="2" multiple>
+							<option value="volvo">Volvo</option>
+							<option value="saab">Saab</option>
+							<option value="fiat">Fiat</option>
+							<option value="audi">Audi</option>
+						</select>
+						</fieldset>
+						<fieldset>
+							0
+							<input type="range" id="a" name="a" value="50">
+							100 +
+							<input type="number" id="b" name="b" value="50">
+							=
+							<output name="x" for="a b"></output>
+							<br><br>
+							<input type="submit">
+						</fieldset>
+						<fieldset>
+							<input type="datetime-local" name="birthdaytime">
+						</fieldset>
+						<input type="reset" value="Reset">
 					</form>
 				</section>
-			
+			<canvas id="myCanvas" width="200" height="100" style="background-color:blue;"></canvas>
 			</article>
 		
 		

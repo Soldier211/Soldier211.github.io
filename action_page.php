@@ -13,6 +13,9 @@
         $lname = htmlspecialchars($_POST['lname']);
         echo "fname=" . $fname . "&lname=" . $lname;
     }
+    else{
+        echo "No data received";
+    }
     ?>
 </body>
 </html>

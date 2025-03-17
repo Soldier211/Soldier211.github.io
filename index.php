@@ -80,6 +80,15 @@
 				Lorem ipsum<div>I am a div</div> dolor sit amet.
 				</section>
 				<section>
+					<form action="/action_page.php" method="post">
+						<label for="fname">First name:</label><br>
+						<input type="text" name="fname" value="John"><br><!--name - okresla nazwe pod jaka dane z tego zostana
+						przeslane do serwera w formularzu-->
+						<label for="lname">Last name:</label><br>
+						<input type="text" name="lname" value="Doe"><br><br>
+						<input type="submit" value="Submit"><!-- your input was received as 
+						fname=John&lname=Doe , pozniej do sie odbiera za pomoca PHP-->
+					</form>
 				</section>
 			
 			</article>
